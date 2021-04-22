@@ -53,30 +53,31 @@ html {
     font-family: Bebas Neue, cursive;
     background: url(https://bhf-cdn.azureedge.net/bhf-blob-prod/0042507_astera-grey-floral-wallpaper_600.jpeg)
 }
+
 h1{
-    font-size: 60px;
+    font-size: 5rem;
     display:flex;
     justify-content: flex-start;
 }
-#Nav {
+.Nav {
     display:flex;
     border: double dodgerblue;
-    width:fit-content;
-    font-size: 40px;
+    width:50%;
+    font-size: 3rem;
     flex-direction: row;
     justify-content:space-around;
 }
 #abt{
     color:rgb(95, 50, 95);
-    padding:5px;
+    padding:3% 0;
 }
 #con{
     color:rgb(37, 124, 124);
-    padding:5px;
+    padding:3% 0;
 }
 #pro{
     color:rgb(82, 107, 31);
-    padding: 5px;
+    padding: 3% 0;
 }
 .flexcontainer{
     display: flex;
@@ -84,23 +85,23 @@ h1{
     align-content:space-around;
     align-items:center;
     flex-wrap: wrap;
-    font-size: 35px;
-    padding:125px;
+    font-size: 2rem;
+    padding:5%;
 }
 .mecontainer{
     display:flex;
-    font-size:50px;
+    font-size:3rem;
     justify-content: flex-end;
 }
 .tag{
     display: flex;
-    font-size: 40px;
+    font-size: 3rem;
     flex-flow: wrap;
     justify-content: flex-end;
 }
 footer{
     display: flex;
-    font-size: 35px;
+    font-size: 3rem;
     justify-content: center;
 }
 #In{
@@ -108,4 +109,46 @@ footer{
 }
 #twit{
     margin: 10px;
+}
+@media(max-width:800px){
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3% 0;
+        width: 50%;
+    }
+    .flexcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .mecontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 80%;
+    }
+}
+@media(max-width:500px){
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3% 0;
+        width: 50%;
+    }
+    .flexcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .mecontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 80%;
+    }
 }
